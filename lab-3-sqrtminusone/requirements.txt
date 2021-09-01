@@ -1,0 +1,4 @@
+click
+sqlalchemy
+mysql-connector-python
+dotenv

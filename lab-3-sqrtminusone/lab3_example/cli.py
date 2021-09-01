@@ -12,23 +12,23 @@ def cli():
     DBConn()
 
 
-@cli.command()
+@cli.command(help='Создать таблицы в БД')
 def create_tables():
     Base.metadata.create_all(DBConn.engine)
 
 
-@cli.command()
+@cli.command(help='Удалить таблицы в БД')
 def drop_tables():
     Base.metadata.drop_all(DBConn.engine)
 
 
-@cli.command()
+@cli.command(help='Выбрать пользователей по ID кафедры')
 @click.option('--department-id', '-d', type=click.INT)
 def list_users(department_id):
     queries.list_users(department_id)
 
 
-@cli.command()
+@cli.command(help='Заполнить БД тестовыми данными')
 def fill_db():
     scripts.fill_db()
 
