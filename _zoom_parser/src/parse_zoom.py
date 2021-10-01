@@ -60,8 +60,8 @@ def main():
 
                 unknown_users[date].append({
                     'name': user_attendance_name,
+                    'minutes': user_attendance_minutes,
                     'email': user_attendance_email,
-                    'minutes': user_attendance_minutes
                 })
 
     # Объединяем списки

@@ -53,8 +53,8 @@ header_map = {
 
 header_map_unknown = {
     'name': 'Неопознанный',
+    'minutes': 'Длительность',
     'email': 'Почта',
-    'minutes': 'Длительность'
 }
 
 header_total = {
@@ -70,6 +70,7 @@ def write_excel(total, found_users, unknown_users):
 
     ws = wb.add_worksheet('Посещение')
     write_sheet(wb, ws, total, header_map=header_total, with_colors=False)
+    ws.set_column(0, 0, 45)
 
     for key, value in found_users.items():
 
@@ -80,5 +81,8 @@ def write_excel(total, found_users, unknown_users):
                     unknown_users[key],
                     offset=len(value) + 2,
                     header_map=header_map_unknown)
+        ws.set_column(0, 0, 45)
+        ws.set_column(2, 2, 45)
+        ws.set_column(3, 3, 45)
 
     wb.close()
