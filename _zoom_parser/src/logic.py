@@ -39,7 +39,7 @@ def identify_user(sheet, found_users, date, user_name, user_email, user_group):
             duplicate['minutes'].append(user_attendance_minutes)
             duplicate['row_index'].append(row_index)
             duplicate['match_with'].append(user_attendance_name)
-            duplicate['visited_enough'] = max(map_(duplicate['minutes'],
+            duplicate['visited_enough'] = sum(map_(duplicate['minutes'],
                                                    int)) >= sheet['min_time']
             continue
 

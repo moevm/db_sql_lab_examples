@@ -32,7 +32,7 @@ def write_sheet(wb, ws, data, offset=0, header_map=None, with_colors=True):
             col = keys.index(_key)
             if not color or not with_colors:
                 ws.write(row, col, str(_value))
-            else :
+            else:
                 ws.write(row, col, str(_value), color)
 
         row += 1
