@@ -30,10 +30,13 @@ def main():
         user_not_visited[date] = []
 
         for _, user in users_df.iterrows():
+            user_name_raw = user[get(users, 'column_name')]
+            if not user_name_raw or not isinstance(user_name_raw, str):
+                break
+
             # Получаем ФИО, группу студента
-            user_name = parse_name(user[get(users, 'column_name')],
-                                   with_midname=True)
-            user_group = user[get(users, 'column_group')]
+            user_name = parse_name(user_name_raw, with_midname=True)
+            user_group = int(user[get(users, 'column_group')])
             user_email = parse_email(user[get(users, 'column_email')])
 
             # Ищем пользователя и сохраняем информацию

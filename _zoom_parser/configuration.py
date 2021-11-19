@@ -74,6 +74,22 @@ sheets = [{
     'column_name': 'ФИО',
     'column_endurance': 'Длительность',
     'column_email': 'Почта'
+}, {
+    'sheet_id': '1xU4akJt6QbTG2FYsrBgYYRTRTrqGRc9IRtdoN-SKQx4',
+    'table_name': "11.11.2021",
+    'date': datetime(2021, 11, 11),
+    'min_time': 75,
+    'column_name': 'ФИО',
+    'column_endurance': 'Длительность',
+    'column_email': 'Почта'
+}, {
+    'sheet_id': '1xU4akJt6QbTG2FYsrBgYYRTRTrqGRc9IRtdoN-SKQx4',
+    'table_name': "18.11.2021",
+    'date': datetime(2021, 11, 18),
+    'min_time': 75,
+    'column_name': 'ФИО',
+    'column_endurance': 'Длительность',
+    'column_email': 'Почта'
 }]
 
 output_file = 'Подсчет посещения.xlsx'
