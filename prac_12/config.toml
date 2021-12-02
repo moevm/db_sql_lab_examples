@@ -1,0 +1,6 @@
+[database]
+user = 'root'
+password = 'password'
+database = 'database'
+host = 'localhost'
+port = 3306
