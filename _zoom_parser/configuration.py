@@ -106,6 +106,14 @@ sheets = [{
     'column_name': 'ФИО',
     'column_endurance': 'Длительность',
     'column_email': 'Почта'
+}, {
+    'sheet_id': '1xU4akJt6QbTG2FYsrBgYYRTRTrqGRc9IRtdoN-SKQx4',
+    'table_name': "09.12.2021",
+    'date': datetime(2021, 12, 9),
+    'min_time': 75,
+    'column_name': 'ФИО',
+    'column_endurance': 'Длительность',
+    'column_email': 'Почта'
 }]
 
 output_file = 'Подсчет посещения.xlsx'
