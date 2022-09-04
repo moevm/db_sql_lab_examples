@@ -1,6 +1,0 @@
-click
-sqlalchemy
-flask
-pymysql
-dynaconf
-flasgger
